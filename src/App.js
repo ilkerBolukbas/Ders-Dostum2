@@ -19,6 +19,11 @@ export default function app() {
            
         3. Aynı kalıp sonraki tıklamalar için de tekrarlanmalıdır, böylece kullanıcı kartı istediği kadar ileri geri çevirmeye devam edebilir. 
 */
+const [isFlipped, setIsFlipped] = useState(false)
+
+  const handleCardClick = () => {
+    setIsFlipped(prev => !prev)
+  }
 
   return (
     <div>
