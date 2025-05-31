@@ -24,7 +24,7 @@ export default function app() {
     <div>
       <header>
         <img src='./images/react.svg' />
-        <h1> React Çalışma Arkadaşı </h1>
+        <h1> React Çalışma Arkadaşım </h1>
       </header>
 
       {/*-------Aşağıdaki div'i düzenleyin------------*/}
