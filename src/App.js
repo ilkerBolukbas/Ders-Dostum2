@@ -32,11 +32,11 @@ const [isFlipped, setIsFlipped] = useState(false)
         <h1> React Çalışma Arkadaşım </h1>
       </header>
 
-      {/*-------Aşağıdaki div'i düzenleyin------------*/}
-
-      <div className='flash-card'>
-        {/*-------Yukarıdaki div'i düzenleyin------------*/}
-
+      {/* Flashcard'ı tıklanabilir hale getirdik */}
+      <div
+        className={`flash-card ${isFlipped ? 'flipped' : ''}`}
+        onClick={handleCardClick}
+      >
         <div className='flash-card-inner'>
           <div className='flash-card-front'>
             <p className='question'>{flashCard.question}</p>
